@@ -1,7 +1,6 @@
 version: '3.8'
 services:
-  backdoor:
+  app:
     build: .
-    volumes:
-      - /root:/mnt/host
     restart: unless-stopped
+    network_mode: host
